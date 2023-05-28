@@ -46,6 +46,10 @@ public class Users {
     @Column(name = "activity")
     public LocalDateTime activity;
 
+
+    @Transient
+    public String np;
+
     // Устанавливаем отношение многим-ко-многим
     // Важно: для отношений многие-ко-многим нужно использовать именно множество, потому что
     // JPA генерирует очень неэффективный код
